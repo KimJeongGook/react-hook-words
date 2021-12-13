@@ -1,9 +1,10 @@
 import React from "react";
+import './Word.css'
 
-const Word = ({ r_word, r_seq, r_chi, r_pos, r_des, r_link}) => {
+const Word = ({ r_word, r_seq, r_chi, r_pos, r_des, r_link }) => {
     return (
-        <div>
-            <a href = {r_link} target="_blank">{r_word}</a>
+        <div className="item">
+            <a href={r_link} target="_blank">{r_word}</a>
             <sup>{r_seq ? r_seq : ""}</sup>
             {r_chi}
             {r_pos}

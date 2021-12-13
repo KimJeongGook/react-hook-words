@@ -1,0 +1,8 @@
+.Home-container{
+    /* background: url('../assets/images/background.jpg'); */
+    /* width: 100%;
+    text-align: center; */
+    width: 70%;
+    columns: 1;
+    margin: 30px auto;
+}

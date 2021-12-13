@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Word, Input } from "../components";
+import './Home.css'
 
 const Home = () => {
     const [loading, setLoading] = useState(true)
@@ -40,7 +41,11 @@ const Home = () => {
         )
     return (
         <>
-            {loading ? 'Loading...' : <div>
+
+            {loading ? 'Loading...' : <div className="Home-container">
+                <div><a href='/'>
+                    <img src="./src/assets/images/logo_big.jpg" width='420px' /></a>
+                </div><br />
                 <Input name='search' type='text' placeholder="Search words ..."
                     value={query} onChange={handleChange} />
                 <br /><br />

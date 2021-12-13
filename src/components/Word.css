@@ -1,0 +1,7 @@
+.item {
+    /* width: 100%; */
+    /* height: 300px; */ 
+    margin-bottom: 10px;
+    /* background: tomato; */
+    display: inline-block; /* 컬럼 짤림 방지*/
+}
