@@ -46,13 +46,15 @@ const Home = () => {
                 <div><a href='/'>
                     <img src="./src/assets/images/logo_big.jpg" width='420px' /></a>
                 </div><br />
+
                 <Input name='search' type='text' placeholder="Search words ..."
                     value={query} onChange={handleChange} />
                 <br /><br />
                 <div>검색 결과 : {query ? homeUI.length : '0'}개</div>
                 <hr />
                 <br />
-                <div>{query ? homeUI : '단어를 검색하세요'}</div>
+                <div>{query ? homeUI : <p>단어를 검색하세요 ... <br /><br />
+                    예시 단어 : 학교, 학원, 소설, 수학, 역사</p>}</div>
             </div>}
         </>
     )
