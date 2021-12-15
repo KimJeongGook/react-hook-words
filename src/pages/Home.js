@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Word, Input, Button } from "../components";
+import logo from "../assets/images/logo_big.jpg"
 import './Home.css'
 
 const Home = () => {
@@ -74,7 +75,7 @@ const Home = () => {
         <>
             {loading ? 'Loading...' : <div className="Home-container">
                 <div><a href='/'>
-                    <img src="./src/assets/images/logo_big.jpg" width='420px' /></a>
+                    <img src={logo} width='420px' /></a>
                 </div><br />
                 <Input name='search' type='text' placeholder="Search words ..."
                     value={query} onChange={handleChange} />
